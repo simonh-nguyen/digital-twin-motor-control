@@ -16,7 +16,7 @@ This system aims to replace the current ECP torsional plants (https://www.ecpsys
 * Add additional features and improvements such as:
   * Allow remote control and monitoring by implementing wireless data communication
   * Introduce students to digital twin and IoT technology, by implementing it into the DTMC
-  * Implement current sensing of the dc motor
+  * Implement current sensing of the DC motor
   * Improve system accuracy for position and velocity setpoint tracking
 
 # System Design:
@@ -39,7 +39,7 @@ This system aims to replace the current ECP torsional plants (https://www.ecpsys
 * Reduced size and weight significantly while maintaining all functionality by re-engineering the entire system including custom PCB
 * Implemented full-duplex wireless control by using a modified Azure IoT Middleware MQTT communication
 * Set up basic digital twin functionality for remote-controlled operation and data collection, which can be built upon to include remote diagnostics, predictive system maintenance and enhanced data visualization
-* Enhanced educational understanding of dc motor by introducing current sensing
+* Enhanced educational understanding of DC motor by introducing current sensing
 * Accurately calibrated DC motor controller using tachometer to control velocity within ±2% RPM of the setpoint (accuracy can be increased, but will increase oscillations and increase settling time)
 
 # To Do:
@@ -47,3 +47,5 @@ This system aims to replace the current ECP torsional plants (https://www.ecpsys
 * Improve portability by allowing users to input their own Wi-Fi username and password into the system
 * Enhance speed and reliability of sending commands to the system remotely
 * Create a user-friendly interface for users to control and monitor the system
+* Add safety features such as:
+  * Stopping the motor if the current is too high, preventing scenarios such as the rotating shaft getting stuck on a fixed object
